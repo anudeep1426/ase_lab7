@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>
+        currency conversion</title>
+    <style>
+        
+        #htmlbody{
+                position: relative;
+                top: 30px;
+                left: 400px;
+                right: -40px;
+                bottom: -40px;
+                width: auto;
+                height: auto;
+                background-image: url(https://www.planwallpaper.com/static/images/background-wallpapers-32_NRz0mTd.jpg);
+                background-size: cover;
+                -webkit-filter: blur(0px);
+                z-index: 0;
+            }
+            #tablebody
+            {
+                position:absolute;
+                top:5%;
+                left: 5%;
+            }
+            #tablestyle
+            {
+                height: 50%;
+            }
+    </style>
+</head>
+<body id="htmlbody">
+
+    <div id="tablestyle">
+        <table style="position: absolute; top: 40%; right:50%;" id="tablebody">
+            <h1>Currency Converter</h1><br><br><br>
+    <tr>
+        <td>Euro:</td>
+        <td><input type="text" name="euro" id="euro"/></td>
+    </tr>
+    <tr>
+
+        <td></td><br><br>
+
+        <td><a href="http://localhost:8080/AssignmentLab6/conversion/EuroToDollar/3"><button>Convert Euro To Dollar</button></a></td>
+    </tr>
+
+            <td>
+                <button id="Delete account" name="Delete account" onclick="window.location='deleteaccount.html'">Delete account</button>
+            </td>
+
+        </table>
+    </div>
+</body>
+
+</html>

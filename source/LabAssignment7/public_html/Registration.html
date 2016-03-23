@@ -1,0 +1,106 @@
+<html ng-app="register">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="RegistrationSaving.js"></script>
+    <title>Registration</title>
+    <style>
+        #htmlbody{
+                position: absolute;
+                top: 10px;
+                left: 320px;
+                right: -40px;
+                bottom: -40px;
+                width: auto;
+                height: auto;
+                background-image: url(https://www.planwallpaper.com/static/images/background-wallpapers-32_NRz0mTd.jpg);
+                background-size: cover;
+                -webkit-filter: blur(0px);
+                z-index: 0;
+            }
+            #tablebody
+            {
+                position:absolute;
+                top:50%;
+                left: 20%;
+            }
+            #tablestyle
+            {
+                height: 50%;
+            }
+    </style>
+</head>
+<body ng-controller="RegistrationController" id="htmlbody">
+<div id="tablestyle">
+            <table id="tablebody">
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        First Name:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="FirstName" ng-model="first" placeholder="Enter First Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        Last Name:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="LastName" ng-model="last" placeholder="Enter Last Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        Email ID:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="EmaiId" ng-model="email" placeholder="Enter Email Id"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        Phone Number:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="PhoneNumber" ng-model="phone" placeholder="Enter Phone Number"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        UserName:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="UserName" ng-model="user" placeholder="Enter User Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="color: white">
+                        Password:
+                        </div>
+                    </td>
+                    <td>
+                        <input type="password" id="Password" ng-model="pass" placeholder="Enter Password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="Login" name="login" ng-click="SaveRegistration(first,last,email,phone,user,pass)">Login</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
